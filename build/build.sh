@@ -1,2 +1,2 @@
 find . -type f -not -name 'build.sh' -exec rm -f {} +
-cmake -G Ninja -D USE_LIBRARY=ON ..
+cmake -G Ninja -DUSE_LIBRARY=ON -DCMAKE_CXX_COMPILER=clang++ ..
