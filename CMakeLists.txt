@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.12 FATAL_ERROR)
 project(recipe-01 LANGUAGES CXX)
 
+set( CMAKE_CXX_STANDARD 14 )
+set( CMAKE_CXX_STANDARD_REQUIRED ON )
+
 option(USE_LIBRARY "Compile sources into a library" OFF)
 message(STATUS "Compile sources into a library? ${USE_LIBRARY}")
 set(BUILD_SHARED_LIBS OFF)
